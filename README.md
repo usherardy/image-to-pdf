@@ -1,4 +1,4 @@
-# 🖼️ Image → PDF Converter (Full-Stack)
+# Image → PDF Converter (Full-Stack)
 
 Convert multiple images (PNG/JPG) into a single PDF—fast, clean, and production-ready.
 
