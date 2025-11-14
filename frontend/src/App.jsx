@@ -39,7 +39,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <h1 className="text-3xl font-bold mt-10 mb-4">🖼️ Image → PDF Converter</h1>
+      <h1 className="text-3xl font-bold mt-10 mb-4">Image → PDF Converter</h1>
+
       <p className="text-gray-600 mb-8 text-center">
         Select up to 10 images (PNG/JPG). We’ll merge them into a single PDF.
       </p>

@@ -1,8 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Optional: global custom tweaks if you want */
+@source "./index.html";
+@source "./src/**/*.{js,jsx,ts,tsx}";
+
+@layer base, components, utilities;
+
+/* Optional global custom tweaks */
 body {
   @apply bg-gray-100 text-gray-900;
 }
@@ -10,3 +13,5 @@ body {
 a {
   @apply text-blue-600 hover:underline;
 }
+
+
