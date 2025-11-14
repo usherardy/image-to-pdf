@@ -155,53 +155,6 @@ GET http://<API_HOST>/output/<filename>.pdf
 
 ---
 
-## 🧠 Limits & Validation
-
-- **Max files:** 10  
-- **Max size:** 10MB per file  
-- **Types:** images (`image/*`) → PNG/JPG recommended
-
-Adjust limits:
-- Frontend: `MAX_FILES`, `MAX_SIZE_BYTES` (in `App.jsx` if you used the enhanced UI)
-- Backend: `multer` limits (in `src/routes/convertRoutes.js`)
-
----
-
-## 🚀 Deployment
-
-### Backend (Render / Railway)
-- Listen on `process.env.PORT`
-- Serve static PDFs:
-```js
-// in backend/src/app.js
-const path = require('path');
-app.use('/output', express.static(path.join(__dirname, '..', 'output')));
-```
-
-### Frontend (Vercel / Netlify)
-- Set `VITE_API_BASE` to your deployed backend URL
-- Rebuild and redeploy
-
-Update with live links:
-- **Frontend:** https://your-frontend.vercel.app  
-- **API Base:** https://your-backend.onrender.com
-
----
-
-## 🧪 Quick Test (cURL)
-
-```bash
-curl -F "images=@/path/to/one.jpg" \
-     -F "images=@/path/to/two.png" \
-     http://localhost:3000/api/convert
-```
-
-Expected:
-```json
-{ "message":"PDF created successfully", "downloadUrl":"/output/converted-*.pdf" }
-```
-
----
 
 ## 📄 License
 
