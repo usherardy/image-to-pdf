@@ -13,7 +13,7 @@ Convert multiple images (PNG/JPG) into a single PDF—fast, clean, and productio
 
 ---
 
-## ✨ Features
+## Features
 
 - Upload up to **10 images** (PNG/JPG), **10MB each**
 - **Drag & drop** upload zone with live highlight
