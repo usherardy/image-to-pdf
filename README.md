@@ -203,46 +203,6 @@ Expected:
 
 ---
 
-## 🧰 Troubleshooting
-
-- **Tailwind styles missing**
-  - Ensure `index.css` includes Tailwind v4 directives above
-  - Keep `import './index.css'` in `src/main.jsx`
-  - Clear Vite cache: delete `frontend/node_modules/.vite` and restart
-
-- **CORS error in frontend**
-  - Confirm `app.use(require('cors')())` is enabled in `backend/src/app.js`
-  - Check `VITE_API_BASE` points to the backend
-
-- **“could not determine executable to run”**
-  - Update Node/npm; reinstall Tailwind packages if needed
-
-- **PDF 404**
-  - Ensure backend serves `/output` statically and the file exists
-
----
-
-## 🛣️ Roadmap (Optional Enhancements)
-
-- JWT auth for `/api/convert`
-- Rate limiting (`express-rate-limit`)
-- Thumbnails & drag-to-reorder on the frontend
-- Background jobs (BullMQ) for heavy conversions
-- Observability (Pino, Sentry)
-- Dockerfiles for FE/BE
-
----
-
-## 🖼️ Screenshots
-
-_Add images to `/screenshots` and reference them:_
-```md
-![Uploader](./screenshots/home.png)
-![Success](./screenshots/success.png)
-```
-
----
-
 ## 📄 License
 
-MIT — feel free to use and adapt. If this repo helped you, a ⭐ would be amazing!
+MIT — feel free to use and adapt.
